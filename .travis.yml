@@ -8,4 +8,7 @@ script:
   - cd ansible_controller_personal
   - ./tools/get-roles.sh common-roles.yml
   - ./tools/get-roles.sh get-vendor-roles.yml
+  - ansible-playbook tools/switch-to-mitogen.yml
+  - echo $ANSIBLE_VAULT_PASS > ./.vault
+  - export ANSIBLE_VAULT_PASSWORD_FILE=./.vault
   - ansible-playbook run-personal-blog.yml -e "ansible_pass=${ANSIBLE_BECOME_PASS}"
