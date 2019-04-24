@@ -54,5 +54,5 @@ BANNER_SUBTITLE = 'Yet another DevOps blog'
 FAVICON = 'images/favicon.ico'
 
 # Plugins
-PLUGIN_PATHS = ["plugins"]
+PLUGIN_PATHS = ["pelican-plugins"]
 PLUGINS = ['i18n_subsites', "optimize_images"]
