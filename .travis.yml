@@ -6,4 +6,6 @@ install:
 script:
   - git clone https://github.com/sorrowless/ansible_controller_personal.git
   - cd ansible_controller_personal
-  - ansible-playbook run-personal-blog.yml -e "ansible_become_pass=${ANSIBLE_BECOME_PASS}"
+  - ./tools/get-roles.sh common-roles.yml
+  - ./tools/get-roles.sh get-vendor-roles.yml
+  - ansible-playbook run-personal-blog.yml -e "ansible_pass=${ANSIBLE_BECOME_PASS}"
