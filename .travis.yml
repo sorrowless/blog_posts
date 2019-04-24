@@ -1,0 +1,9 @@
+dist: xenial
+language: python
+python: "3.6"
+install:
+  - pip install ansible
+script:
+  - git clone https://github.com/sorrowless/ansible_controller_personal.git
+  - cd ansible_controller_personal
+  - ansible-playbook run-personal-blog.yml -e "ansible_become_pass=${ANSIBLE_BECOME_PASS}"
