@@ -21,22 +21,18 @@ to use `vimdiff` for that task. So, here it is in a nutshell:
 
 * next, ensure that you're using vimdiff as a git merge tool:
 
-  ```
-  git config merge.tool vimdiff
-  git config merge.conflictstyle diff3
-  git config mergetool.prompt false
-  ```
+        git config merge.tool vimdiff
+        git config merge.conflictstyle diff3
+        git config mergetool.prompt false
 
   first command is about to use vimdiff as a git diff tool, second one enables
   diff3 format, third disables prompt invocation at each run of merge tool
 
 * not required, but nice to have is to add to your `.vimrc` something like
 
-  ```
-  if &diff
-    colorscheme desert
-  endif
-  ```
+        if &diff
+          colorscheme desert
+        endif
 
   cause defautl vimdiff colors can be inconvenient for you
 

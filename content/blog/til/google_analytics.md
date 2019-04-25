@@ -5,7 +5,7 @@ Slug: google_analytics
 Tags: til, analytics
 Lang: en
 
-## Google analytics in Pelican
+#### Google analytics in Pelican
 
 Today I learn how GA works with Pelican. That's actually pretty easy - one just
 need to register on [Google Analytics website][1] and get an unique identifier
