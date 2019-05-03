@@ -1,5 +1,5 @@
 Title: Ansible hostvars
-Date: 2019-04-25 16:30
+Date: 2019-04-27 22:48
 Authors: sbog
 Slug: ansible-hostvars
 Tags: til, ansible
