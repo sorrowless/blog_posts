@@ -2,7 +2,7 @@ dist: xenial
 language: python
 python: "3.6"
 install:
-  - pip install ansible=2.8.12
+  - pip install ansible==2.8.12
   - apt-get install -y sshpass
 script:
   - git clone https://github.com/sorrowless/ansible_controller_personal.git
