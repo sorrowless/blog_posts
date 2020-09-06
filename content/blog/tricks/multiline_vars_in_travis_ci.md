@@ -11,5 +11,5 @@ private SSH key to access target host from CI. Easy way to do so is:
 * first, swap all line carriers with '\n' symbols.
 * second, enclose whole line into $'<data here>' symbols
 
-Result will looks like `'$-----BEGIN CERTIFICATE-----\nNKOQ1z...\n-----END CERTIFICATE-----'`,
+Result will looks like `$'-----BEGIN CERTIFICATE-----\nNKOQ1z...\n-----END CERTIFICATE-----'`,
 which gives you proper formatting when you read that variable in CI session.
