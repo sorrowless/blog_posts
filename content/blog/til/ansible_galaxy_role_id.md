@@ -5,8 +5,6 @@ Slug: ansible-galaxy-role-id
 Tags: til, ansible
 Lang: en
 
-# How to find role id in Ansible galaxy
-
 In case you need to find Ansible galaxy role id (e.g. for badge in your Github
 repo), you can just run
 
